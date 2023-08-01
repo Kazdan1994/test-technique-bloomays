@@ -32,7 +32,7 @@ Même chose pour les bloomers sortant.
 
 Pour ça nous nous appuyons sur les clées “beginDate” et “endDate” de l’objet mission
 
-![👉](https://bloomays.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F706b50b6-4f66-4f25-af8d-0ec800d66356%2Farriving.png?table=block&id=3b25a385-b980-4bf6-bacb-e88eabd86e31&spaceId=81894261-1dd5-42e9-85e5-b486231ba5b4&width=580&userId=&cache=v2)
+![👉](arriving.png)
 
 #### Back:
 

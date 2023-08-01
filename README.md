@@ -1,5 +1,74 @@
-<img alt="📝" aria-label="📝" src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f4dd.svg" style="position: absolute; top: 0; left: 0; opacity: 1; width: 78px; height: 78px;">
-<br/>
+## Setting Up Environment Variables
+
+This documentation will guide you on how to set up your application's environment variables by creating a `.env` file based on the `.env.example` file provided in the project repository.
+
+### Step 1: Copy `.env.example`
+
+Locate the `.env.example` file in the project repository and create a new file named `.env` in the same directory.
+
+### Step 2: Obtain Airtable Access Token
+
+To access data from your Airtable base, you need an access token with the `data.records:read` scope. Follow these steps to create the access token:
+
+1. Log in to your Airtable account.
+2. Click on your profile picture in the top right corner and select "Account."
+3. Under the API section, click on the "Generate API Key" button.
+4. Give your API key a descriptive name and select the `data.records:read` scope.
+5. Click the "Save" button to create the key.
+
+### Step 3: Find Base ID
+
+To access your Airtable base, you need to know the Base ID. Follow these steps to find the Base ID:
+
+1. Log in to your Airtable account.
+2. Open the base you want to use in your application.
+3. Click on the "Help" menu on the top right corner of the base.
+4. Select "API documentation."
+5. The Base ID will be displayed in the documentation.
+
+### Step 4: Fill in `.env` Variables
+
+In the `.env` file, fill in the `AIRTABLE_API_KEY` and `AIRTABLE_BASE_ID` variables with your access token and Base ID, respectively:
+
+Example `.env` file:
+
+```
+AIRTABLE_API_KEY=your_airtable_access_token
+AIRTABLE_BASE_ID=your_airtable_base_id
+```
+
+### Usage
+
+Your application will automatically read the environment variables from the `.env` file during runtime. You don't need to manually load the variables; the application will do it automatically.
+
+### Security Best Practices
+
+Keep your `.env` file secure and never share it publicly or include it in your version control.
+
+### Troubleshooting
+
+If you encounter issues with your environment variables, double-check for any typos and ensure that the access token has the correct scope (`data.records:read`). Also, verify that the Base ID is correct.
+
+Remember to refer back to this documentation whenever you need to set up the environment variables for your application.
+
+
+### Launch
+Open your terminal or command prompt, navigate to the directory containing the docker-compose.yml file, and run the following command to start the application:
+
+```bash
+docker-compose up --build
+```
+
+Docker Compose will build the Docker images for the backend and frontend based on the configurations in their respective Dockerfile files. It will also use the environment variables from the .env file to configure the services.
+
+Once the containers are built and running, you can access the frontend application in your web browser at http://localhost. The backend will be available at http://localhost:3000.
+
+That's it! You have successfully launched your application using Docker Compose.
+
+Enjoy!
+
+
+<hr/>
 
 use Case technique
 ==================

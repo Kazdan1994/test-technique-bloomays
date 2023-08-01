@@ -1,0 +1,4 @@
+﻿id,label,beginDate,endDate,missionType,freelance,id (from freelance),firstname (from freelance),lastname (from freelance),email (from freelance)
+42,Create a website for a client,2020-09-18,2021-09-18,Development,1,1,Michel,Cacahuete,michel.cacahuete@gmail.com
+9,Share the new portfolio,2020-09-18,2021-09-18,Community management,2,2,Sandy,Courgette,sandy.courgette@gmail.com
+16,Show the project to the client,2020-10-18,2021-10-18,Business,3,3,Laura,Choux,laura.choux@gmail.com
